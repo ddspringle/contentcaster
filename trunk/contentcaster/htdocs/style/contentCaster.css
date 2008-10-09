@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+.loginBG {
+ background-color:#0091b5;
+ padding:0px;
+}
+
+.loginText {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11pt;
+	margin-left: 80px;
+	padding-bottom: 25px;
+	text-align:right;
+	color: #ffffff;
+	vertical-align:middle;
+}
+
+.loginFooterText {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11pt;
+	padding-bottom: 25px;
+	text-align:center;
+	color: #000000;
+	vertical-align:middle;
+}
+
+.loginBox {
+	border: 1px solid #000000;
+	width: 225px;
+	margin-bottom: 10px;
+}
+
+.loginButton {
+	margin-left: 330px;
+	margin-top: 20px;
+}
+
+.footerText {
+	color: #333333;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+
+.bodyTable {
+	background-color:#CCCCCC;
+	width:741px;
+}
+
+.linkText {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11pt;
+	padding-left: 25px;
+	text-align:left;
+	color: #000000;
+	vertical-align:middle;
+	font-weight:bold;
+}
+
+.boldText {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9pt;
+	text-align:left;
+	color: #000000;
+	vertical-align:middle;
+	font-weight:bold;
+}
+
+.textTable {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	color: #000000;
+	background-color:#0091B5;
+}
+
