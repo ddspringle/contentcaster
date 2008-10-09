@@ -15,7 +15,7 @@ This document describes how to create your own new admin account using your own 
 <cfoutput>#GenerateSecretKey('BLOWFISH')#</cfoutput>
 }}}
 
-  * Save the file to your server and open it in a browser. This will output a unique encryption key. Refresh a few times to get one you like :)
+  * Save the file to your server in the root directory of ContentCaster (i.e. outputKey.cfm) and open it in a browser. This will output a unique encryption key. Refresh a few times to get one you like :)
 
   * Next, open up your Application.cfm file and replace the _fishkey_ variable's value with the one you generate in the last step.
 
@@ -34,7 +34,7 @@ This document describes how to create your own new admin account using your own 
 
   * Edit this file and change the values of 'myUserName', 'myPassword', 'myFirstName' and 'myLastName' with actual values (i.e. 'john@mydomain.com', 'd@rkN!gh7', 'John', 'Adams')
 
-  * Save the file to your server and open it in a browser. This will output the encrypted (and hashed) values required to replace the values for these fields in the database records. 
+  * Save the file to your server in the root directory of ContentCaster (i.e. outputAdmin.cfm) and open it in a browser. This will output the encrypted (and hashed) values required to replace the values for these fields in the database records. 
 
   * You will have to manually edit the existing a_userbase table entry for admin (#1) and replace the username, password, firstName and lastName values with the ones produced by this file, or alternatively you can do this before importing the SQL file included with ContentCaster v1.0 by editing the SQL file directly.
 
