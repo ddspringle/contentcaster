@@ -9,3 +9,69 @@ This document aims to help explain what ContentCaster is and what it does.
 = Details =
 
 ContentCaster is a content management and scheduling application that allows you to manage and deploy content to your own website or to any other website through the use of a flexible API interface. Uses of ContentCaster include delivering frequently changing content such that an artist, photographer, videographer or blogger might produce where there is a need to broadcast and track said content. 
+
+----
+
+===Support for multiple members via an admin invite===
+
+  * ContentCaster provides support for single user operation (as the administrator), team user operation (with multiple administrators) and managed user operation (with one or more administrators and one or more users) by providing a user management interface that allows you to invite members to your ContentCaster deployment. Secure system generated passwords enhance security and ensure privacy. No non-administrator 'user registration' page is yet provided in this release, but one can easily be created from existing code.
+
+
+===Secure login and personally identifiable information encryption===
+
+  * ContentCaster provides a secure login algorithm that combines MD5 hashing to protect the users password when entering it to login or change their password, and BLOWFISH encryption of all personally identifiable information before being transmitted to or stored in the database. _NOTE: A new key should be generated when deploying ContentCaster. See our other Wiki pages for more information._
+
+
+===Member change and recover password capability===
+
+  * ContentCaster's secure system generated passwords provide random highly secure passwords automatically to users when you invite them, as an option when you edit them, and whenever they choose to reset their own password in the event they forget their login. Using only their email address, users can have a new secure system generated password sent to them. Once a new user, or a user who has recovered their account, logs into ContentCaster they can easily and securely use the Change Password option to assign their own password.
+
+
+===Multiple content per category===
+
+  * ContentCaster allows multiple, mixed content up to an administrator defined limit (default is 128) for each category. This allows you and your users to create up to the limit you define in content per category.
+
+
+===Multiple categories per user===
+
+  * ContentCaster allows multiple uniquely identified categories per user (no maximum currently). Combined with multiple content per category, ContentCaster provides a dynamic range of options for managing your content. Put all your .doc files in one category, your .pdf's in another. Put your images and video together in another. With previews for most popular content, direct links in content manager, and per category scheduling ContentCaster provides you with a suite of tools designed for content management and broadcasting.
+
+
+===Default content scheduling===
+
+  * ContentCaster's API supports four basic modes of operation. One of those modes of operation is 'default'. This default mode, which is called when no arguments are passed to the ContentCaster API pulls from the default schedule, which is only available to administrators. This default schedule allows administrators to assign default content based on the schedules assigned to any of the categories within the ContentCaster's database. This tell ContentCaster to use the schedule of the category specified for display today.
+
+
+===Flexible API for content delivery===
+
+  * ContentCaster's API allows you to pull content from the database by Category ID, Category ID and Content ID, or Category ID and Run Date (in yyyy-mm-dd format) in addition to the default mode previously mentioned. These options allow you to use any other code, Coldfusion or otherwise, to manipulate how ContentCaster operates through it's HTTP API. Be sure to visit our Wiki and read the information available there on the API interface.
+
+
+===Support for most popular file formats (over 500)===
+
+  * ContentCaster includes a mime type database with well over 500 entries, icon files for most popular formats, and the ability to serve any content of any unsupported mime types with a simple entry in the database.
+
+
+===CSS style sheets (mostly)===
+
+  * ContentCaster uses a mix of inline and file-based CSS styles. We're working on converting all of this over to just a single style-sheet file and progress has been made. More progress to come, however for a truly skinable interface.
+
+
+===Preview of image (png, jpg, gif, etc.) files===
+
+  * ContentCaster's content management interface recognizes many popular file formats such as images and displays a thumbnail along with the filename of the image instead of just the filename and icon as other non-viewable content (.zip, for example) is displayed in the content manager. The width and height of the preview image are administrator defined.
+
+
+===Preview of video (flv) and audio (mp3) files===
+
+  * ContentCaster's content management interface also recognizes .flv (Flash Video) files and displays them in an administrator defined width and height player along with the filename. MP3 audio files are also recognized and provided in a player with a faux EQ (administrator defined) along with the filename.
+
+
+===Admin defined options for image, video, email, encryption, etc.===
+
+  * ContentCaster's Application.cfm has numerous administrator defined options for everything from email subjects, servers and accounts to image or video width and height. ContentCaster is highly customizable from this file, allowing full control over the operation and look and feel of ContentCaster.
+
+
+===Basic logging and reporting of content views===
+
+  * ContentCaster doesn't just serve up the content blidly. It logs all hits for all content and shows them in a basic user interface. More work needs to be done on the reporting side, but the interface provides total hits for the month and all time, and an administrator defined number of the last viewers content ID, host IP of the viewer, referring site, and view date and time.
