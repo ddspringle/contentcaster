@@ -1,0 +1,32 @@
+#summary How-To: Use the ContentCaster v1.0 API.
+#labels Phase-Deploy,Phase-Implementation,Featured
+
+= Introduction =
+
+This document will give you the information you need to successfully utilize the ContentCaster v1.0 API.
+
+
+= Details =
+
+
+The ContentCaster v1.0 API supports foure basic modes of operation. 
+
+*Default*
+The default mode, the one in which the API is called without any variables, will pull the content scheduled for today, or the last scheduled content, as defined in the default schedule of ContentCaster.
+
+  * Ex: http://www.contentcaster.net/contentCaster.cfm
+
+*categoryId*
+The second mode of the API is to pull the content scheduled for today, or the last scheduled content, for a specific category as defined by the specific categories schedule. 
+  
+  * Ex: http://www.contentcaster.net/contentCaster.cfm?categoryId=test
+
+*contentId*
+The third mode of the API is to pull specific content from within a specific category. This mode requires both the _categoryId_ and _contentId_ variables.
+
+  * Ex: http://www.contentcaster.net/contentCaster.cfm?categoryId=test&contentId=4
+
+*runDate*
+The fourth mode of the API is to pull content scheduled to run on a specific date from within a specific category. This mode requires both the _categoryId_ and the _runDate_ variables. The _runDate_ variable should be formatted as yyyy-mm-dd.
+
+  * Ex: http://www.contentcaster.net/contentCaster.cfm?categoryId=test&runDate=2008-12-31
