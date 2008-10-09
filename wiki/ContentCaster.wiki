@@ -45,7 +45,7 @@ ContentCaster is a content management and scheduling application that allows you
 
 ===Flexible API for content delivery===
 
-  * ContentCaster's API allows you to pull content from the database by Category ID, Category ID and Content ID, or Category ID and Run Date (in yyyy-mm-dd format) in addition to the default mode previously mentioned. These options allow you to use any other code, Coldfusion or otherwise, to manipulate how ContentCaster operates through it's HTTP API. Be sure to visit our ContentCasterAPI Wiki and read the information available there on the API interface.
+  * ContentCaster's API allows you to pull content from the database by Category ID, Category ID and Content ID, or Category ID and Run Date (in yyyy-mm-dd format) in addition to the default mode previously mentioned. These options allow you to use any other code, Coldfusion or otherwise, to manipulate how ContentCaster operates through it's HTTP API. Be sure to visit our [ContentCasterAPI] Wiki and read the information available there on the API interface.
 
 
 ===Support for most popular file formats (over 500)===
