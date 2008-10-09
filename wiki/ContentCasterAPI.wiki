@@ -9,7 +9,7 @@ This document will give you the information you need to successfully utilize the
 = Details =
 
 
-The ContentCaster v1.0 API supports foure basic modes of operation. 
+The ContentCaster v1.0 API supports four basic modes of operation. 
 
 *Default*
 The default mode, the one in which the API is called without any variables, will pull the content scheduled for today, or the last scheduled content, as defined in the default schedule of ContentCaster.
