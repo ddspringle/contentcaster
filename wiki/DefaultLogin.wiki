@@ -8,11 +8,11 @@ This document provides you with the default login information for ContentCaster 
 
 = Details =
 
-The SQL file provides a default user once inported into your own schema. The default login information for ContentCaster v1.0 is:
+The SQL file included with ContentCaster v1.0 provides a default admin user once inported into your own schema. The default login information for ContentCaster v1.0 is:
 
   * *username*: admin
   * *password*: ccaster
 
 We recommend you change the default username and password via the Member management interface once you have logged in.
 
-NOTE: For optimum security, you should change the fishKey variable in Application.cfm to your own encryption key and replace the default account with your own.
+NOTE: For optimum security, you should change the fishKey variable in Application.cfm to your own encryption key and replace the default account with your own. All string data stored in the user database is encrypted, and the password is additionally MD5 hashed before being encrypted and stored in the database.
