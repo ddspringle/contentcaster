@@ -11,6 +11,7 @@ This document aims to help explain what ContentCaster is and what it does.
 ContentCaster is a content management and scheduling application that allows you to manage and deploy content to your own website or to any other website through the use of a flexible API interface. Uses of ContentCaster include delivering frequently changing content such that an artist, photographer, videographer or blogger might produce where there is a need to broadcast and track said content. 
 
 ----
+=Features=
 
 ===Support for multiple members via an admin invite===
 
