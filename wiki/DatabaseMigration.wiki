@@ -1,0 +1,18 @@
+#summary Update MySQL database for 1.0.x to 1.1 migration.
+#labels Phase-Implementation,Phase-Deploy
+
+= Introduction =
+
+This document outlines how to modify your existing 1.0.x database structure for the changes implemented in version 1.1 of ContentCaster.
+
+
+= Details =
+
+  * First, you will need to alter the `'a_categoryschedule'` table's `runDate` from DATE to DATETIME.
+  * Next you will need to repeat this step for `'a_defaultcategoryschedule'`, changing `runDate` from DATE to DATETIME.
+  * Finally, you will need to add a VARCHAR(255) row to `'a_contentbase'` for the `contentName` introduced in version 1.1.
+
+
+With the above noted changes, you can easily use your existing database with the new 1.1 version of ContentCaster.
+
+*NOTE*: You may wish to run a script to get the name of your content from the `filename` row of the `'a_contentbase'` table to populate your tables new `contentName` row.
