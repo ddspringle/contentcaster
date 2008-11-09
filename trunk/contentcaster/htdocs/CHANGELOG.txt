@@ -1,0 +1,37 @@
+[2008-10-09 Denard Springle sales@dvdmenubacks.com]
+
+	* Application.cfm: 
+		* Modified email subjects to remove <cfoutput> tags
+		* Added firstRow and secRow font color variables for content/member/category lists
+	* contentCaster.css: Modified textTable style to add left and right padding
+	* all: 
+		* revamped table formatting (width) 
+		* Ran through XHTML parser and fixed 95% (still missing alt attributes)
+		* made other minor modifications to comments and code structure
+
+
+[2008-11-08 Denard Springle sales@dvdmenubacks.com]
+
+	* All files:
+		* Reformatted for CSS and XHTML validity
+	* Added files:
+		* planContentDate.cfm - daily content view
+		* planDefaultContentDate.cfm - daily default content view
+		* updateContentDate.cfm - update daily content
+		* updateDefaultContentDate.cfm - update daily default content
+		* calMonth.cfc - generates monthly views (small and large)
+		* multiple .png images
+	* Deleted files:
+		* largeCalendar.cfc
+		* largeDefaultCalendar.cfc
+		* smallCalendar.cfc
+		* randomPassword.cfc duplicate in root
+		* multiple .gif images
+	* Moved files:
+		* adminSess.cfc - components dir
+		* getMime.cfc - components dir
+		* randomPassword.cfc - components dir
+	* SQL Changes
+		* Changed runDate in a_categoryschedule and a_defaultcategoryschedule to DATETIME from DATE
+		* Added contentName to a_contentbase (VARCHAR(255))
+			
