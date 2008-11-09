@@ -38,7 +38,7 @@ ContentCaster is a content management and scheduling application that allows you
   * ContentCaster allows multiple uniquely identified categories per user (no maximum currently). Combined with multiple content per category, ContentCaster provides a dynamic range of options for managing your content. Put all your .doc files in one category, your .pdf's in another. Put your images and video together in another. With previews for most popular content, direct links in content manager, and per category scheduling ContentCaster provides you with a suite of tools designed for content management and broadcasting.
 
 
-===Default content scheduling===
+===Default content scheduling by the hour===
 
   * ContentCaster's API supports four basic modes of operation. One of those modes of operation is 'default'. This default mode, which is called when no arguments are passed to the ContentCaster API pulls from the default schedule, which is only available to administrators. This default schedule allows administrators to assign default content based on the schedules assigned to any of the categories within the ContentCaster's database. This tell ContentCaster to use the schedule of the category specified for display today.
 
@@ -53,9 +53,9 @@ ContentCaster is a content management and scheduling application that allows you
   * ContentCaster includes a mime type database with well over 500 entries, icon files for most popular formats, and the ability to serve any content of any unsupported mime types with a simple entry in the database.
 
 
-===CSS style sheets (mostly)===
+===XHTML and CSS Valid===
 
-  * ContentCaster uses a mix of inline and file-based CSS styles. We're working on converting all of this over to just a single style-sheet file and progress has been made. More progress to come, however for a truly skinable interface.
+  * ContentCaster latest revision (1.1 and up) is a truly skinable application providing the ability to change 99% of the interface look and feel from the new CSS style sheet. In addition, we've completely revamped every single page in ContentCaster in release 1.1 to be 100% XHTML 1.0 compatible. 
 
 
 ===Preview of image (png, jpg, gif, etc.) files===
@@ -76,3 +76,7 @@ ContentCaster is a content management and scheduling application that allows you
 ===Basic logging and reporting of content views===
 
   * ContentCaster doesn't just serve up the content blidly. It logs all hits for all content and shows them in a basic user interface. More work needs to be done on the reporting side, but the interface provides total hits for the month and all time, and an administrator defined number of the last viewers content ID, host IP of the viewer, referring site, and view date and time.
+
+===Scheduling content by the day and by the hour===
+
+  * ContentCaster provides the ability to use a schedule wizard to quickly schedule your content by date range, content range and rotation to provide day to day (24 hour) scheduling of content. In addition, as of v1.1 you can also define content using the calendar wizard to define a different content every hour! Default content is also now scheduled by the hour! With the fallback algorithm you can be assured that the last scheduled content will always be available too, so you can set your own schedule by assigning content every X hours, or even days, apart! 
